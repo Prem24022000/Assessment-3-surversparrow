@@ -1,0 +1,23 @@
+.nav {
+  margin-bottom: 120px;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      font-size: 1.5rem;
+    }
+
+    &__lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      margin-left: 80px;
+    }
+  }
+}

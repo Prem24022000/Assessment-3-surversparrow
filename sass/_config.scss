@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 60px 120px;
+}
+
+.footer-container {
+  padding: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}

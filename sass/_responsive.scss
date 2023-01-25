@@ -1,0 +1,71 @@
+@include laptop {
+  .container {
+    padding: 40px 40px 0 40px;
+  }
+}
+
+@include tablet {
+  .container {
+    padding: 0;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background-color: rgb(74, 70, 70);
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: white;
+  }
+
+  .nav {
+    margin-bottom: 0;
+    background-color: skyblue;
+    padding: 20px;
+
+    &__content {
+      flex-direction: column;
+      &__lists {
+        height: 0;
+        transition: all 0.6s;
+        overflow: hidden;
+        flex-direction: column;
+        a {
+          margin-bottom: 20px;
+        }
+      }
+
+      .active {
+        height: 40vh;
+      }
+    }
+  }
+
+  .header__content {
+    font-size: 2.5rem;
+  }
+}
+
+@include mobile-l {
+  main {
+    background-size: cover;
+    background-position: left;
+  }
+
+  .footer__icon {
+    right: 20px;
+  }
+
+  .footer__chatBot {
+    right: 30px;
+  }
+}
+
+@include mobile-s {
+  .footer__chatBot {
+    right: 0;
+    margin: 0 20px;
+  }
+}

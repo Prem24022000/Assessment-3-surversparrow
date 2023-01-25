@@ -1,0 +1,31 @@
+@import './config';
+@import './nav';
+@import './header';
+@import './footer';
+@import './responsive';
+
+body {
+  height: 100vh;
+  line-height: 1.6;
+  position: relative;
+}
+
+main {
+  background-image: url('../img/Banner.png');
+  font-family: 'Montserrat', sans-serif;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

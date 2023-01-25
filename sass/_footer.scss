@@ -1,0 +1,207 @@
+.footer__chatBot.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  float: right;
+  margin-bottom: 40px;
+  position: relative;
+
+  &__icon {
+    background-color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    padding: 12px 20px;
+    border-radius: 100%;
+    border-bottom-right-radius: 0;
+    border: none;
+    // float: right;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__chatBot {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+    &__content-first {
+      &--header {
+        background-color: #7f8ac5;
+        color: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+        span {
+          font-weight: 400;
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-weight: 200;
+          font-size: 0.8rem;
+          margin-top: 10px;
+          max-width: 250px;
+        }
+      }
+
+      &--mid {
+        margin-left: 40px;
+        margin-bottom: 20px;
+
+        p {
+          font-size: 0.7rem;
+          color: #13a884;
+          margin-bottom: 10px;
+        }
+
+        button {
+          border: none;
+          background-color: #13a884;
+          border-radius: 8px;
+          padding: 10px 15px;
+          color: white;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .btn--list {
+            display: flex;
+            align-items: center;
+
+            h5 {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    &__content-second {
+      display: none;
+      &--header {
+        background-color: #7f8ac5;
+        color: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+        span {
+          font-weight: 400;
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-weight: 200;
+          font-size: 0.8rem;
+          margin-top: 10px;
+        }
+      }
+
+      &--parent {
+        height: 0;
+        overflow: scroll;
+      }
+
+      &--right {
+        background-color: #4c5aa1;
+        color: white;
+        max-width: 250px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-bottom: 20px;
+        position: relative;
+        font-size: 0.8rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0px;
+          bottom: -15px;
+          border-top: 25px solid #4c5aa1;
+          border-left: 34px solid transparent;
+          border-bottom: none;
+        }
+      }
+
+      &--left {
+        background-color: #ecf1fb;
+        border-radius: 8px;
+
+        max-width: 200px;
+        font-size: 0.8rem;
+        padding: 10px 20px;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          border-top: 25px solid #ecf1fb;
+          border-right: 34px solid transparent;
+          border-bottom: none;
+        }
+      }
+
+      &--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        color: #13a884;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      &--input {
+        // display: flex;
+        position: relative;
+
+        input {
+          width: 100%;
+          padding: 30px;
+          padding-right: 80px;
+          border: none;
+          border-top: 1px solid black;
+          outline: none;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+
+        button {
+          border: none;
+          height: 50px;
+          background-color: transparent;
+          width: 80px;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

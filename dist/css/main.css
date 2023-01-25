@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 60px 120px;
+}
+
+.footer-container {
+  padding: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+.nav {
+  margin-bottom: 120px;
+  position: relative;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__content__logo {
+  font-size: 1.5rem;
+}
+.nav__content__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__content__list {
+  margin-left: 80px;
+}
+
+.header__content {
+  font-size: 4rem;
+  line-height: 1.3;
+  margin-left: 80px;
+}
+
+.footer__chatBot.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  float: right;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer__icon {
+  background-color: white;
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  padding: 12px 20px;
+  border-radius: 100%;
+  border-bottom-right-radius: 0;
+  border: none;
+}
+.footer__icon:hover {
+  cursor: pointer;
+}
+.footer__chatBot {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  transition-timing-function: linear;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.footer__chatBot__content-first--header {
+  background-color: #7f8ac5;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.footer__chatBot__content-first--header span {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.footer__chatBot__content-first--header p {
+  font-weight: 200;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  max-width: 250px;
+}
+.footer__chatBot__content-first--mid {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.footer__chatBot__content-first--mid p {
+  font-size: 0.7rem;
+  color: #13a884;
+  margin-bottom: 10px;
+}
+.footer__chatBot__content-first--mid button {
+  border: none;
+  background-color: #13a884;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: white;
+}
+.footer__chatBot__content-first--mid button:hover {
+  cursor: pointer;
+}
+.footer__chatBot__content-first--mid button .btn--list {
+  display: flex;
+  align-items: center;
+}
+.footer__chatBot__content-first--mid button .btn--list h5 {
+  margin-right: 5px;
+}
+.footer__chatBot__content-second {
+  display: none;
+}
+.footer__chatBot__content-second--header {
+  background-color: #7f8ac5;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.footer__chatBot__content-second--header span {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.footer__chatBot__content-second--header p {
+  font-weight: 200;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+.footer__chatBot__content-second--parent {
+  height: 0;
+  overflow: scroll;
+}
+.footer__chatBot__content-second--right {
+  background-color: #4c5aa1;
+  color: white;
+  max-width: 250px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 0.8rem;
+}
+.footer__chatBot__content-second--right::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -15px;
+  border-top: 25px solid #4c5aa1;
+  border-left: 34px solid transparent;
+  border-bottom: none;
+}
+.footer__chatBot__content-second--left {
+  background-color: #ecf1fb;
+  border-radius: 8px;
+  max-width: 200px;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.footer__chatBot__content-second--left::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  border-top: 25px solid #ecf1fb;
+  border-right: 34px solid transparent;
+  border-bottom: none;
+}
+.footer__chatBot__content-second--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #13a884;
+}
+.footer__chatBot__content-second--logo img {
+  margin-right: 10px;
+}
+.footer__chatBot__content-second--input {
+  position: relative;
+}
+.footer__chatBot__content-second--input input {
+  width: 100%;
+  padding: 30px;
+  padding-right: 80px;
+  border: none;
+  border-top: 1px solid black;
+  outline: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.footer__chatBot__content-second--input button {
+  border: none;
+  height: 50px;
+  background-color: transparent;
+  width: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.footer__chatBot__content-second--input button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 40px 40px 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background-color: rgb(74, 70, 70);
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: white;
+  }
+  .nav {
+    margin-bottom: 0;
+    background-color: skyblue;
+    padding: 20px;
+  }
+  .nav__content {
+    flex-direction: column;
+  }
+  .nav__content__lists {
+    height: 0;
+    transition: all 0.6s;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .nav__content__lists a {
+    margin-bottom: 20px;
+  }
+  .nav__content .active {
+    height: 40vh;
+  }
+  .header__content {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  main {
+    background-size: cover;
+    background-position: left;
+  }
+  .footer__icon {
+    right: 20px;
+  }
+  .footer__chatBot {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer__chatBot {
+    right: 0;
+    margin: 0 20px;
+  }
+}
+body {
+  height: 100vh;
+  line-height: 1.6;
+  position: relative;
+}
+
+main {
+  background-image: url("../img/Banner.png");
+  font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
