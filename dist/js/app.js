@@ -126,7 +126,7 @@ function showChatBotResponse() {
 }
 
 async function getAPI() {
-  const response = await fetch('https://api.adviceslip.com/adviceaa');
+  const response = await fetch('https://api.adviceslip.com/advice');
 
   const responseData = await response.json();
 
